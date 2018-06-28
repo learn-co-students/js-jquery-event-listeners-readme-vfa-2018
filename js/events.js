@@ -1,8 +1,8 @@
 //define functions here
 
 function getIt() {
-  $("p").on("click", function() {
-    alert("Hey!");
+  $('p').on('click', function() {
+    alert('Hey!');
   });
 }
 
@@ -13,16 +13,16 @@ function frameIt() {
 }
 
 function pressIt() {
-  $("input#typing").on('keydown', function(key) {
-    if (key.keyCode == 71) {
-      alert('g was pressed');
+  $('input').on('keydown', function(key) {
+    if(key.which == 71){
+        alert('g was pressed');
     }
   });
-} 	 
-}); 	function submitIt() {
+}
+
+function submitIt() {
   $('form').on('submit', function() {
-    alert("your form is going to be submitted now");
-    return;
+    alert('Your form is going to be submitted now.');
   });
 }
 
