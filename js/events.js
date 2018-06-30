@@ -1,17 +1,28 @@
 //define functions here
 
-$(document).ready(function(){
-
- function getIt(){
+function getIt(){
     $('p').on('click', function(){
       alert("Hey!");
     });
   }
   
-  function pressIt(){
-    $('#typing').on('keydown', function(){
-      
+  function frameIt(){
+    $('img.tasty').on('load', function(){
+      $('img.tasty').css({"border-color": "red", 
+             "border-weight":"2px", 
+             "border-style":"solid"});
     });
   }
+  function pressIt(){
+    $('#typing').on('keydown', function(key){
+      if(key === 71){
+        alert("G key was pressed down.");
+      }
+    });
+  }
+
+$(document).ready(function(){
+
+ 
 
 });
