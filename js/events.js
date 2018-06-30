@@ -18,8 +18,8 @@ function frameIt(){
 }
 
 function pressIt(){
-  $("input").on("keydown", function(e){
-    if (e.which === 71){
+  $("input").on("keydown", function(key){
+    if (key.which === 71){
       window.alert("G was pressed.");
     }
   });
