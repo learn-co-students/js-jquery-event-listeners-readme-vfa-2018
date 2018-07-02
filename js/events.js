@@ -4,7 +4,7 @@ function getIt() {
 }
 
 function frameIt() {
-  this.tasty = this;
+  this.class = "tasty";
 }
 
 function pressIt() {
