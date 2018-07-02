@@ -20,7 +20,7 @@ describe('Selectors', () => {
   });
 
   describe('pressIt()', () => {
-    it('pressIt() binds an event that alerts the user when the G key was pressed down', function() {
+    it('pressIt() binds an event that alerts the user when the g key was pressed down', function() {
       window.alert = expect.createSpy()
 
       window.pressIt();
@@ -58,3 +58,15 @@ describe('Selectors', () => {
   });
 
 });
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
